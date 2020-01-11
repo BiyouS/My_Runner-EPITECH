@@ -26,12 +26,12 @@ void display_parallax(game_t *t)
     sfVector2f pos;
     static bool firstpass = true;
 
-    for (int i = 8; i != NB_ASSETS; i++) {
+    for (int i = 8; i != NB_ASSETS - 1; i++) {
         sprite = t->sprite[i]->sprite;
         pos = sfSprite_getPosition(sprite);
-        if (i == NB_ASSETS - 1 && firstpass)
+        if (i == NB_ASSETS - 2 && firstpass)
             sfSprite_setPosition(sprite, (sfVector2f){0, 675});
-        sfSprite_move(sprite, (sfVector2f){((NB_ASSETS - i) * -0.25f), 0});
+        sfSprite_move(sprite, (sfVector2f){((NB_ASSETS - 1 - i) * -0.25f), 0});
         sfRenderWindow_drawSprite(t->window, sprite, NULL);
         sfSprite_move(sprite, (sfVector2f){SIZE, 0});
         sfRenderWindow_drawSprite(t->window, sprite, NULL);

@@ -17,6 +17,6 @@ const float FRAME_BY_S = 1.0f / 15.0f;
 const float FRAME_BY_S_2 = 1.0f / 10.0f;
 
 const float SCALE_PARALLAX = 3.75f;
-const int NB_ASSETS = 13;
+const int NB_ASSETS = 14;
 const int NB_ASSETS_PARALLAX = 8;
 const char *FILEPATHS[] = {AS_1, AS_2, AS_3, AS_4, AS_5, AS_6, AS_7, AS_8};

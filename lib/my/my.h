@@ -17,16 +17,16 @@
 #define AS_1 "Assets/img/Menu.png", "Assets/img/Button_Jouer.png"
 #define AS_2 "Assets/img/Button_Credits.png", "Assets/img/Button_Exit.png"
 #define AS_3 "Assets/img/Credits.png", "Assets/img/Title.png"
-#define AS_4 "Assets/img/Kwak/hell-hound-run.png"
+#define AS_4 "Assets/img/Kwak/bunny_2.png"
 #define AS_5 "Assets/img/parallax/plx-1.png", "Assets/img/parallax/plx-2.png"
 #define AS_6 "Assets/img/parallax/plx-3.png", "Assets/img/parallax/plx-4.png"
 #define AS_7 "Assets/img/parallax/plx-5.png", "Assets/img/parallax/plx-6.png"
-#define AS_8 NULL
-
+#define AS_8 "Assets/img/Kwak/rock.png",  NULL
 
 #include "structs.h"
 
-
+void score_up(game_t *t);
+void display_parallax(game_t *t);
 void init_sprite(game_t *t);
 int my_digitlen(int digit);
 char *int_to_str(char *str, int nb);

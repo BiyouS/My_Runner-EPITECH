@@ -21,7 +21,7 @@ extern const float SECONDS;
 static void manage_events(game_t *t)
 {
     if (sfKeyboard_isKeyPressed(sfKeySpace))
-        my_putstr("AAA|");
+        t->modif_rect = 13;
 }
 
 int analyse_events_game(game_t *t)

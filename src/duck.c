@@ -30,12 +30,13 @@ void collision_spawn(game_t *t)
 
 void move_rect(game_t *t)
 {
-    int offset = 110;
-    int max_value = 440;
+    int offset = 145;
+    int max_value = 145 * t->modif_rect;
 
     t->anima.rect.left += offset;
     if (t->anima.rect.left == max_value) {
         t->anima.rect.left = 0;
+        t->modif_rect = 5;
     }
     return;
 }
@@ -62,7 +63,7 @@ void display_duck(game_t *t)
     static bool firstpass = true;
 
     t->duck[0].sprite.sprite = t->sprite[6]->sprite;
-    t->duck[0].pos = (sfVector2f){20, 620};
+    t->duck[0].pos = (sfVector2f){20, 500};
     t->duck[0].scale = (sfVector2f){1, 1};
     sfSprite_setScale(t->duck[0].sprite.sprite, t->duck[0].scale);
     if (firstpass) {

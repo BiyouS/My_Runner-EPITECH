@@ -10,6 +10,7 @@ SRCS	=	./src/my_runner.c		\
 		./src/create_sprite_array.c	\
 		./src/score_up.c		\
 		./src/global.c			\
+		./src/arg_h.c			\
 		./src/credits.c			\
 		./src/duck.c			\
 		./src/event_gest.c		\

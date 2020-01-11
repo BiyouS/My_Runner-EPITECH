@@ -73,6 +73,7 @@ typedef struct button {
 }button_t;
 
 typedef struct tools {
+    int modif_rect;
     sfCursorType cursor;
     sfVideoMode mode;
     sfEvent event;

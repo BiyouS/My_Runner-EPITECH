@@ -8,6 +8,7 @@
 SRCS	=	./src/my_runner.c		\
 		./src/game.c			\
 		./src/create_sprite_array.c	\
+		./src/past_game.c		\
 		./src/score_up.c		\
 		./src/global.c			\
 		./src/arg_h.c			\

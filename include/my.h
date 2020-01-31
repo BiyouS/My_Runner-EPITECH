@@ -21,7 +21,7 @@
 #define AS_5 "Assets/img/parallax/plx-1.png", "Assets/img/parallax/plx-2.png"
 #define AS_6 "Assets/img/parallax/plx-3.png", "Assets/img/parallax/plx-4.png"
 #define AS_7 "Assets/img/parallax/plx-5.png", "Assets/img/parallax/plx-6.png"
-#define AS_8 "Assets/img/Kwak/rock.png",  NULL
+#define AS_8 "Assets/img/Kwak/rock.png", NULL
 
 #include "structs.h"
 

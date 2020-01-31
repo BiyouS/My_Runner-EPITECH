@@ -10,7 +10,8 @@
 void arg_h(void)
 {
     my_putstr("The basic rules for the my_runner are as follows:\n");
-    my_putstr("\n•the player is a character who runs in a map you took as parameter.\n");
+    my_putstr("\n•the player is a character who runs in a map");
+    my_putstr("you took as parameter.\n");
     my_putstr("•enemies and obstacles must appear on the opposite side to the");
     my_putstr("player position.\n");
     my_putstr("•the player can use the space bar to jump and avoid");
